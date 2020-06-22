@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: spring-cloud-producer
+  rabbitmq:
+    host: host
+    port: 5672
+    username: username
+    password: password
+  sleuth:
+    sampler:
+      probability: 1.0
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
